@@ -17,9 +17,14 @@
 // |
 
 import Route from '@ioc:Adonis/Core/Route'
+// import RegistersController from 'App/Controllers/Http/RegistersController'
 
 Route.get('/', async ({ view }) => {
-  return view.render('welcome')
+  return view.render('home')
 })
 //landing page
-Route.on('/home').render('home')
+Route.on('home').render('home')
+Route.on('/index').render('home')
+
+// register view
+Route.get('register', 'RegistersController.index')
