@@ -28,3 +28,5 @@ Route.on('/index').render('home')
 
 // register view
 Route.get('register', 'RegistersController.index')
+
+Route.post('register', 'RegistersController.store')
