@@ -90,12 +90,17 @@
 
           <div class="row">
              <!-- Country -->
+
               <div class="col-lg-6">
                 <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label">Country</label>
+
                   <select type="text" class="form-control" name="country">
-                    <option>Countries</option>
+                    @each(country in countries)
+                    <option>{{ country.name }}</option>
+                    @endeach
                   </select>
+
                 </div>
               </div>
 

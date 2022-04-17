@@ -17,6 +17,7 @@
 // |
 
 import Route from '@ioc:Adonis/Core/Route'
+import Country from 'App/Models/Country'
 // import RegistersController from 'App/Controllers/Http/RegistersController'
 
 Route.get('/', async ({ view }) => {
