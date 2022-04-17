@@ -29,5 +29,8 @@ Route.on('/index').render('home')
 
 // register view
 Route.get('register', 'RegistersController.index')
-
+//register form
 Route.post('register', 'RegistersController.store')
+
+//clients dashboard
+Route.on('dashboard').render('client/dashboard')
