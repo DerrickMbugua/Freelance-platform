@@ -34,3 +34,9 @@ Route.post('register', 'RegistersController.store')
 
 //clients dashboard
 Route.on('dashboard').render('client/dashboard')
+//login page
+Route.get('login', async ({ view }) => {
+  return view.render('auth/login')
+})
+//login form
+Route.post('login', 'LoginController.index')
